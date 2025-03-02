@@ -148,3 +148,4 @@ class BaseVLM(ABC):
             return self.run_inference(None, text=text, task="embed_text")["embedding"]
         else:
             raise NotImplementedError(f"{self.__class__.__name__} does not support text embedding")
+# End of file
