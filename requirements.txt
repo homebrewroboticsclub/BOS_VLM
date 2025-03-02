@@ -1,0 +1,6 @@
+﻿numpy>=1.19.0
+opencv-python>=4.5.0
+transformers>=4.20.0
+torch>=1.10.0
+pillow>=8.0.0
+pyyaml>=5.1
