@@ -1,0 +1,21 @@
+﻿# Default configuration for BOS_VLM
+
+# Model settings
+model: clip
+device: cuda
+cache_dir: ~/.cache/BOS_VLM/models
+
+# Processing settings
+image:
+  max_size: 512
+  normalize: true
+
+# BOS node settings
+node:
+  name: vlm_node
+  image_topic: /camera/image_raw
+  compressed_image_topic: /camera/image_raw/compressed
+  query_topic: /vlm/query
+  response_topic: /vlm/response
+  embedding_topic: /vlm/embedding
+  detections_topic: /vlm/detections

@@ -1,0 +1,6 @@
+﻿# CLIP model configuration
+
+# Model settings
+model_name: openai/clip-vit-base-patch32
+image_size: 224
+text_max_length: 77

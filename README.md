@@ -1,4 +1,4 @@
-﻿# BOS_VLM: Visual Language Models for Brew Operating System
+# BOS_VLM: Visual Language Models for Brew Operating System
 
 A lightweight, easy-to-use package for integrating visual language models with the Brew Operating System.
 
@@ -19,58 +19,58 @@ A lightweight, easy-to-use package for integrating visual language models with t
 
 \\\
 BOS_VLM/
-├── BOS_VLM/                      # Main package
-│   ├── __init__.py
-│   ├── models/                   # Model implementations
-│   │   ├── __init__.py
-│   │   ├── base_model.py         # Abstract base class
-│   │   ├── clip_model.py
-│   │   ├── owlvit_model.py
-│   │   └── ...
-│   ├── bos/                      # BOS integration
-│   │   ├── __init__.py
-│   │   ├── node.py               # Main BOS node
-│   │   ├── topics.py             # Topic definitions
-│   │   └── utils.py
-│   └── utils/
-│       ├── __init__.py
-│       ├── image_processing.py
-│       └── text_processing.py
-├── config/                       # Configuration files
-│   ├── default.yaml              # Default configuration
-│   └── models/                   # Model-specific configurations
-│       ├── clip.yaml
-│       └── owlvit.yaml
-├── launch/                       # BOS launch files
-│   ├── vlm_node.launch
-│   └── demo.launch
-├── scripts/                      # Utility scripts
-│   ├── download_models.sh
-│   └── benchmark.py
-├── examples/                     # Usage examples
-│   ├── simple_query.py
-│   ├── object_detection.py
-│   └── interactive_demo.py
-├── tests/                        # Unit and integration tests
-│   ├── test_models.py
-│   └── test_bos_integration.py
-├── docs/                         # Documentation
-│   ├── installation.md
-│   ├── models.md
-│   ├── bos_integration.md
-│   └── examples.md
-├── Dockerfile                    # Docker setup
-├── setup.py                      # Package setup
-├── requirements.txt              # Python dependencies
-├── LICENSE                       # Open source license
-└── README.md                     # Main documentation
++-- BOS_VLM/                      # Main package
+�   +-- __init__.py
+�   +-- models/                   # Model implementations
+�   �   +-- __init__.py
+�   �   +-- base_model.py         # Abstract base class
+�   �   +-- clip_model.py
+�   �   +-- owlvit_model.py
+�   �   +-- ...
+�   +-- bos/                      # BOS integration
+�   �   +-- __init__.py
+�   �   +-- node.py               # Main BOS node
+�   �   +-- topics.py             # Topic definitions
+�   �   +-- utils.py
+�   +-- utils/
+�       +-- __init__.py
+�       +-- image_processing.py
+�       +-- text_processing.py
++-- config/                       # Configuration files
+�   +-- default.yaml              # Default configuration
+�   +-- models/                   # Model-specific configurations
+�       +-- clip.yaml
+�       +-- owlvit.yaml
++-- launch/                       # BOS launch files
+�   +-- vlm_node.launch
+�   +-- demo.launch
++-- scripts/                      # Utility scripts
+�   +-- download_models.sh
+�   +-- benchmark.py
++-- examples/                     # Usage examples
+�   +-- simple_query.py
+�   +-- object_detection.py
+�   +-- interactive_demo.py
++-- tests/                        # Unit and integration tests
+�   +-- test_models.py
+�   +-- test_bos_integration.py
++-- docs/                         # Documentation
+�   +-- installation.md
+�   +-- models.md
+�   +-- bos_integration.md
+�   +-- examples.md
++-- Dockerfile                    # Docker setup
++-- setup.py                      # Package setup
++-- requirements.txt              # Python dependencies
++-- LICENSE                       # Open source license
++-- README.md                     # Main documentation
 \\\
 
 ## Installation
 
 \\\ash
 # Clone the repository
-git clone https://github.com/your-username/BOS_VLM.git
+git clone https://github.com/homebrewroboticsclub/BOS_VLM.git
 cd BOS_VLM
 
 # Install dependencies

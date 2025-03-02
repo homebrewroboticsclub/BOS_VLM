@@ -1,0 +1,11 @@
+﻿<launch>
+  <!-- Argument for model type -->
+  <arg name="model" default="clip" />
+  <arg name="config_file" default="$(find BOS_VLM)/config/default.yaml" />
+  
+  <!-- Launch the VLM node -->
+  <node name="vlm_node" pkg="BOS_VLM" type="node.py" output="screen">
+    <param name="model" value="$(arg model)" />
+    <param name="config_file" value="$(arg config_file)" />
+  </node>
+</launch>
