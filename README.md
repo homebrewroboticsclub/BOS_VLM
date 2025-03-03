@@ -17,58 +17,58 @@ A lightweight, easy-to-use package for integrating visual language models with t
 
 ## Directory Structure
 
-\\\
-BOS_VLM/
-+-- BOS_VLM/                      # Main package
-�   +-- __init__.py
-�   +-- models/                   # Model implementations
-�   �   +-- __init__.py
-�   �   +-- base_model.py         # Abstract base class
-�   �   +-- clip_model.py
-�   �   +-- owlvit_model.py
-�   �   +-- ...
-�   +-- bos/                      # BOS integration
-�   �   +-- __init__.py
-�   �   +-- node.py               # Main BOS node
-�   �   +-- topics.py             # Topic definitions
-�   �   +-- utils.py
-�   +-- utils/
-�       +-- __init__.py
-�       +-- image_processing.py
-�       +-- text_processing.py
-+-- config/                       # Configuration files
-�   +-- default.yaml              # Default configuration
-�   +-- models/                   # Model-specific configurations
-�       +-- clip.yaml
-�       +-- owlvit.yaml
-+-- launch/                       # BOS launch files
-�   +-- vlm_node.launch
-�   +-- demo.launch
-+-- scripts/                      # Utility scripts
-�   +-- download_models.sh
-�   +-- benchmark.py
-+-- examples/                     # Usage examples
-�   +-- simple_query.py
-�   +-- object_detection.py
-�   +-- interactive_demo.py
-+-- tests/                        # Unit and integration tests
-�   +-- test_models.py
-�   +-- test_bos_integration.py
-+-- docs/                         # Documentation
-�   +-- installation.md
-�   +-- models.md
-�   +-- bos_integration.md
-�   +-- examples.md
-+-- Dockerfile                    # Docker setup
-+-- setup.py                      # Package setup
-+-- requirements.txt              # Python dependencies
-+-- LICENSE                       # Open source license
-+-- README.md                     # Main documentation
-\\\
+```
+📦 BOS_VLM
+ ┣ 📂 BOS_VLM                     # Main package
+ ┃  ┣ 📜 __init__.py
+ ┃  ┣ 📂 models                   # Model implementations
+ ┃  ┃  ┣ 📜 __init__.py
+ ┃  ┃  ┣ 📜 base_model.py         # Abstract base class
+ ┃  ┃  ┣ 📜 clip_model.py
+ ┃  ┃  ┣ 📜 owlvit_model.py
+ ┃  ┃  ┗ 📜 ...
+ ┃  ┣ 📂 bos                      # BOS integration
+ ┃  ┃  ┣ 📜 __init__.py
+ ┃  ┃  ┣ 📜 node.py               # Main BOS node
+ ┃  ┃  ┣ 📜 topics.py             # Topic definitions
+ ┃  ┃  ┗ 📜 utils.py
+ ┃  ┗ 📂 utils
+ ┃     ┣ 📜 __init__.py
+ ┃     ┣ 📜 image_processing.py
+ ┃     ┗ 📜 text_processing.py
+ ┣ 📂 config                      # Configuration files
+ ┃  ┣ 📜 default.yaml             # Default configuration
+ ┃  ┗ 📂 models                   # Model-specific configurations
+ ┃     ┣ 📜 clip.yaml
+ ┃     ┗ 📜 owlvit.yaml
+ ┣ 📂 launch                      # BOS launch files
+ ┃  ┣ 📜 vlm_node.launch
+ ┃  ┗ 📜 demo.launch
+ ┣ 📂 scripts                     # Utility scripts
+ ┃  ┣ 📜 download_models.sh
+ ┃  ┗ 📜 benchmark.py
+ ┣ 📂 examples                    # Usage examples
+ ┃  ┣ 📜 simple_query.py
+ ┃  ┣ 📜 object_detection.py
+ ┃  ┗ 📜 interactive_demo.py
+ ┣ 📂 tests                       # Unit and integration tests
+ ┃  ┣ 📜 test_models.py
+ ┃  ┗ 📜 test_bos_integration.py
+ ┣ 📂 docs                        # Documentation
+ ┃  ┣ 📜 installation.md
+ ┃  ┣ 📜 models.md
+ ┃  ┣ 📜 bos_integration.md
+ ┃  ┗ 📜 examples.md
+ ┣ 📜 Dockerfile                  # Docker setup
+ ┣ 📜 setup.py                    # Package setup
+ ┣ 📜 requirements.txt            # Python dependencies
+ ┣ 📜 LICENSE                     # Open source license
+ ┗ 📜 README.md                   # Main documentation
+```
 
 ## Installation
 
-\\\ash
+```bash
 # Clone the repository
 git clone https://github.com/homebrewroboticsclub/BOS_VLM.git
 cd BOS_VLM
@@ -82,19 +82,19 @@ pip install -e .
 # Build BOS package
 cd ~/brew_ws/
 make
-\\\
+```
 
 ## Quick Start
 
 ### Launch the BOS node
 
-\\\ash
+```bash
 brew launch BOS_VLM vlm_node.launch model:=clip
-\\\
+```
 
 ### Query the model
 
-\\\python
+```python
 import brew
 from BOS_VLM.msg import VLMQuery, VLMResponse
 from sensor_msgs.msg import Image
@@ -114,7 +114,7 @@ query.model = "clip"
 
 # Send the query
 query_pub.publish(query)
-\\\
+```
 
 ## License
 
