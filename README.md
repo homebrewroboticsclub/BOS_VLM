@@ -23,21 +23,21 @@ A lightweight, easy-to-use package for integrating visual language models with t
  ┃  ┣ __init__.py
  ┃  ┣ 📂 models                   # Model implementations
  ┃  ┃  ┣ __init__.py
- ┃  ┃  ┣ base_model.py         # Abstract base class
+ ┃  ┃  ┣ base_model.py            # Abstract base class
  ┃  ┃  ┣ clip_model.py
  ┃  ┃  ┣ owlvit_model.py
  ┃  ┃  ┗ ...
  ┃  ┣ 📂 bos                      # BOS integration
  ┃  ┃  ┣ __init__.py
- ┃  ┃  ┣ node.py               # Main BOS node
- ┃  ┃  ┣ topics.py             # Topic definitions
+ ┃  ┃  ┣ node.py                  # Main BOS node
+ ┃  ┃  ┣ topics.py                # Topic definitions
  ┃  ┃  ┗ utils.py
  ┃  ┗ 📂 utils
  ┃     ┣ __init__.py
  ┃     ┣ image_processing.py
  ┃     ┗ text_processing.py
  ┣ 📂 config                      # Configuration files
- ┃  ┣ default.yaml             # Default configuration
+ ┃  ┣ default.yaml                # Default configuration
  ┃  ┗ 📂 models                   # Model-specific configurations
  ┃     ┣ clip.yaml
  ┃     ┗ owlvit.yaml
@@ -59,11 +59,11 @@ A lightweight, easy-to-use package for integrating visual language models with t
  ┃  ┣ models.md
  ┃  ┣ bos_integration.md
  ┃  ┗ examples.md
- ┣ Dockerfile                  # Docker setup
- ┣ setup.py                    # Package setup
- ┣ requirements.txt            # Python dependencies
- ┣ LICENSE                     # Open source license
- ┗ README.md                   # Main documentation
+ ┣ Dockerfile                     # Docker setup
+ ┣ setup.py                       # Package setup
+ ┣ requirements.txt               # Python dependencies
+ ┣ LICENSE                        # Open source license
+ ┗ README.md                      # Main documentation
 ```
 
 ## Installation
